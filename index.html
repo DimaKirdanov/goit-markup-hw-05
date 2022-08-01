@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-05</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -71,7 +71,7 @@
       <section class="section hero">
         <div class="conteiner">
           <h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -147,6 +147,9 @@
                 width="370"
                 height="294"
               />
+              <div class="what-we-do-subtittle">
+                <p class="what-we-do-subtittle-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="what-we-do-item list">
               <img
@@ -155,6 +158,9 @@
                 width="370"
                 height="294"
               />
+               <div class="what-we-do-subtittle">
+                <p class="what-we-do-subtittle-text">мобильные приложения</p>
+              </div>
             </li>
             <li class="what-we-do-item list">
               <img
@@ -163,6 +169,9 @@
                 width="370"
                 height="294"
               />
+               <div class="what-we-do-subtittle">
+                <p class="what-we-do-subtittle-text"> Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -492,15 +501,16 @@
     
     </footer>
         <!-- MODAL -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button"  class="modal-close-button">
+        <button type="button"  class="modal-close-button" data-modal-close>
 <svg class="modal-close-btn-icon" width="18px", height="18px">
-  <use href ="./images/SVG/symbol-defs.svg#icon-close-modal" ></use>
+  <use href ="./images/SVG/symbol-defs.svg#close-modal" ></use>
 </svg>
         </button>
       </div>
     </div>
      <!-- /MODAL -->
+      <script src="./js/modal.js"></script>
   </body>
 </html>
